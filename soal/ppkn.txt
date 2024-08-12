@@ -1,0 +1,105 @@
+var questionsPPKnKelas5 = [
+    {
+        question: "Apa yang dimaksud dengan Pancasila?",
+        options: ["A. Lima nilai dasar bangsa Indonesia", "B. Lima dasar keutuhan negara", "C. Lima dasar pembangunan negara", "D. Lima dasar pilar negara"],
+        answer: "A"
+    },
+    {
+        question: "Siapakah presiden pertama Republik Indonesia?",
+        options: ["A. Ir. Soekarno", "B. Soeharto", "C. Soekarno-Hatta", "D. Joko Widodo"],
+        answer: "A"
+    },
+    {
+        question: "Apa yang dimaksud dengan Bhinneka Tunggal Ika?",
+        options: ["A. Kesatuan dalam keberagaman", "B. Kebhinekaan dalam kesatuan", "C. Persatuan dalam perbedaan", "D. Kesatuan dalam perbedaan"],
+        answer: "B"
+    },
+    {
+        question: "Siapakah tokoh yang berperan dalam memproklamasikan kemerdekaan Indonesia pada tanggal 17 Agustus 1945?",
+        options: ["A. Ir. Soekarno", "B. Mohammad Hatta", "C. Sutan Syahrir", "D. Ki Hadjar Dewantara"],
+        answer: "A"
+    },
+    {
+        question: "Apa yang menjadi dasar negara Indonesia?",
+        options: ["A. Pancasila", "B. UUD 1945", "C. Pembukaan UUD 1945", "D. Pancasila dan UUD 1945"],
+        answer: "D"
+    },
+    {
+        question: "Apakah yang menjadi lambang negara Indonesia?",
+        options: ["A. Burung Garuda", "B. Elang Jawa", "C. Kepiting", "D. Harimau Sumatera"],
+        answer: "A"
+    },
+    {
+        question: "Apakah yang menjadi lambang negara Indonesia?",
+        options: ["A. Merah Putih", "B. Biru Putih", "C. Hijau Putih", "D. Putih Merah"],
+        answer: "A"
+    },
+    {
+        question: "Apakah yang dimaksud dengan gotong royong?",
+        options: ["A. Bersatu padu dalam kebersamaan", "B. Bekerja bersama untuk kepentingan bersama", "C. Membantu sesama dalam keadaan sulit", "D. Menjaga kebersihan lingkungan"],
+        answer: "B"
+    },
+    {
+        question: "Apakah yang dimaksud dengan musyawarah?",
+        options: ["A. Membicarakan sesuatu hingga tercapainya kesepakatan", "B. Konsultasi untuk membuat keputusan", "C. Diskusi untuk mencapai tujuan bersama", "D. Mengadakan pertemuan untuk berunding"],
+        answer: "A"
+    },
+    {
+        question: "Apakah yang dimaksud dengan kekeluargaan?",
+        options: ["A. Persatuan dalam keluarga", "B. Kasih sayang dalam keluarga", "C. Hubungan erat antar anggota keluarga", "D. Rasa saling menghargai antar anggota keluarga"],
+        answer: "C"
+    },
+    {
+        question: "Siapakah yang memimpin Indonesia saat Perang Dunia II?",
+        options: ["A. Ir. Soekarno", "B. Mohammad Hatta", "C. Jenderal Sudirman", "D. Soekarno-Hatta"],
+        answer: "A"
+    },
+    {
+        question: "Apakah yang dimaksud dengan hak asasi manusia?",
+        options: ["A. Hak yang dimiliki manusia sejak lahir", "B. Hak yang diberikan oleh pemerintah", "C. Hak yang diperoleh oleh orang kaya", "D. Hak yang berlaku di luar negeri"],
+        answer: "A"
+    },
+    {
+        question: "Apakah yang dimaksud dengan demokrasi?",
+        options: ["A. Sistem pemerintahan yang dipimpin oleh raja", "B. Sistem pemerintahan yang dipilih oleh rakyat", "C. Sistem pemerintahan yang dipimpin oleh tentara", "D. Sistem pemerintahan yang dipilih oleh presiden"],
+        answer: "B"
+    },
+    {
+        question: "Apa yang dimaksud dengan kebebasan berpendapat?",
+        options: ["A. Hak untuk menyuarakan pendapat tanpa batas", "B. Hak untuk menyuarakan pendapat dengan terbatas", "C. Hak untuk menyuarakan pendapat di media sosial", "D. Hak untuk menyuarakan pendapat kepada presiden"],
+        answer: "A"
+    },
+    {
+        question: "Apakah yang dimaksud dengan persatuan Indonesia?",
+        options: ["A. Kesatuan suku bangsa dalam negara", "B. Kesatuan wilayah dalam negara", "C. Kesatuan agama dalam negara", "D. Kesatuan kebijakan dalam negara"],
+        answer: "A"
+    },
+    {
+        question: "Apakah yang dimaksud dengan keadilan?",
+        options: ["A. Perlakuan yang adil bagi semua orang", "B. Perlakuan yang berbeda bagi setiap orang", "C. Perlakuan yang diskriminatif bagi semua orang", "D. Perlakuan yang tidak adil bagi semua orang"],
+        answer: "A"
+    },
+    {
+        question: "Apa yang dimaksud dengan kewarganegaraan?",
+        options: ["A. Kepentingan masyarakat terhadap negara", "B. Kepentingan negara terhadap masyarakat", "C. Kepentingan individu terhadap negara", "D. Kepentingan negara terhadap individu"],
+        answer: "C"
+    },
+    {
+        question: "Apakah yang dimaksud dengan cinta tanah air?",
+        options: ["A. Rasa cinta kepada negara asing", "B. Rasa cinta kepada negara sendiri", "C. Rasa benci kepada negara sendiri", "D. Rasa hormat kepada negara sendiri"],
+        answer: "B"
+    },
+    {
+        question: "Apakah yang dimaksud dengan kemerdekaan?",
+        options: ["A. Kebebasan untuk membuat keputusan", "B. Kebebasan untuk bertindak sesuai kehendak", "C.Kebebasan untuk mengekspresikan pendapat secara bebas", "D. Kebebasan untuk hidup tanpa batasan"],
+        answer: "C"
+    },
+    {
+        question: "Apakah yang dimaksud dengan tanggung jawab?",
+        options: ["A. Kewajiban untuk melindungi diri sendiri", "B. Kewajiban untuk membantu sesama", "C. Kewajiban untuk menjaga lingkungan", "D. Kewajiban untuk menunaikan tugas dengan baik"],
+        answer: "D"
+    }
+];
+```
+
+Dengan menggunakan variabel `questionsPPKnKelas5`, Anda dapat mengintegrasikan soal-soal Pendidikan Pancasila dan Kewarganegaraan ke dalam aplikasi atau game yang sedang Anda buat. Jika ada pertanyaan lebih lanjut atau ada hal lain yang bisa saya bantu, jangan ragu untuk bertanya!

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Latihan Soal SD</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(circle, #FF0000, #0000FF);
+    
+  }
+
+  .container {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 36px;
+    color: #3C91E0;
+    margin-bottom: -5%;
+  }
+
+  button {
+    background-color: #FF9900;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+    outline: none;
+    font-weight:bold;
+  }
+
+  button:hover {
+    background-color: #FFBD33;
+  }
+
+  .question {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .options button {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    outline: none;color: rgb(0, 0, 0);
+  }
+
+  .options button:hover {
+    background-color: #91ff80;
+  }
+
+  .result {
+    text-align: center;
+    display: none;
+    margin-left: 20%;
+    margin-right: 20%;
+    
+  }
+
+  #result-container p {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+  }
+
+  #backBtn {
+    background-color: #4CAF50;
+    margin-top: 20px;
+  }
+
+  #backBtn:hover {
+    background-color: #45a049;
+  }
+  
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>BAHASA INGGRIS</h1><br>
+  <h5>10 NOMOR</h5>
+  <button id="startBtn" onclick="startQuiz()">Mulai Latihan</button>
+
+  <div id="quiz-container" style="display:none;">
+    <div class="question" id="question"></div>
+    <div class="options" id="options"></div>
+    <button id="nextBtn" onclick="nextQuestion()" style="display:none;">Lanjut</button>
+  </div>
+
+  <div class="result" id="result-container">
+    <h2>Hasil Latihan</h2>
+    <p id="score"></p>
+    <a href="../soal.html"><button>Kembali ke Soal</button></a>
+  </div>
+</div>
+
+<script>
+  const questions = [
+  {
+        question: "What is the opposite of 'big'?",
+        options: ["A. Small", "B. Tall", "C. Long", "D. Wide"],
+        answer: "A"
+    },
+    {
+        question: "Which word means 'not fast'?",
+        options: ["A. Slow", "B. Quick", "C. Rapid", "D. Swift"],
+        answer: "A"
+    },
+    {
+        question: "What is the plural form of 'child'?",
+        options: ["A. Childs", "B. Children", "C. Childes", "D. Childs'"],
+        answer: "B"
+    },
+    {
+        question: "Which sentence is correct? ",
+        options: ["A. He don't like ice cream.", "B. She have a pet dog.", "C. I plays football every day.", "D. They are playing in the park."],
+        answer: "D"
+    },
+    {
+        question: "Which word is a synonym of 'happy'?",
+        options: ["A. Sad", "B. Angry", "C. Joyful", "D. Upset"],
+        answer: "C"
+    },
+    {
+        question: "What is the past tense of 'go'?",
+        options: ["A. Went", "B. Gone", "C. Going", "D. Goed"],
+        answer: "A"
+    },
+    {
+        question: "Which word means 'a place where you can borrow books'?",
+        options: ["A. School", "B. Park", "C. Library", "D. Zoo"],
+        answer: "C"
+    },
+    {
+        question: "What is the opposite of 'dark'?",
+        options: ["A. Black", "B. Night", "C. Light", "D. Shadow"],
+        answer: "C"
+    },
+    {
+        question: "Which sentence is correct?",
+        options: ["A. She are going to the market.", "B. I is playing with my friends.", "C. They am studying for the test.", "D. He is eating lunch."],
+        answer: "D"
+    },
+    {
+        question: "What is the plural form of 'mouse'?",
+        options: ["A. Mouses", "B. Mice", "C. Mous", "D. Mouse's"],
+        answer: "B"
+    }
+];
+
+  let currentQuestion = 0;
+  let score = 0;
+
+  function startQuiz() {
+    document.getElementById('startBtn').style.display = 'none'; // Menghilangkan tombol "Mulai Latihan"
+    document.getElementById('quiz-container').style.display = 'block';
+    document.getElementById('result-container').style.display = 'none';
+    shuffleQuestions(); // Mengacak urutan soal sebelum dimulai
+    showQuestion();
+  }
+
+  function shuffleQuestions() {
+    for (let i = questions.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [questions[i], questions[j]] = [questions[j], questions[i]];
+    }
+  }
+
+  function showQuestion() {
+    const currentQues = questions[currentQuestion];
+    document.getElementById('question').textContent = currentQues.question;
+    document.getElementById('options').innerHTML = "";
+    for (let i = 0; i < currentQues.options.length; i++) {
+      const option = document.createElement("button");
+      option.textContent = currentQues.options[i];
+      option.addEventListener("click", function() {
+        checkAnswer(currentQues, i);
+      });
+      document.getElementById('options').appendChild(option);
+    }
+  }
+
+  function checkAnswer(question, selectedOption) {
+    if (question.answer === String.fromCharCode(65 + selectedOption)) {
+      score += 5; // Skor ditambah 5 jika jawaban benar
+    }
+    document.getElementById('nextBtn').style.display = 'block'; // Menampilkan tombol Next setelah menjawab
+    for (const option of document.getElementById('options').querySelectorAll('button')) {
+      option.disabled = true; // Menonaktifkan tombol pilihan setelah menjawab
+    }
+  }
+
+  function nextQuestion() {
+    currentQuestion++;
+    if (currentQuestion < questions.length) {
+      showQuestion();
+      document.getElementById('nextBtn').style.display = 'none'; // Menyembunyikan tombol Next untuk pertanyaan berikutnya
+      for (const option of document.getElementById('options').querySelectorAll('button')) {
+        option.disabled = false; // Mengaktifkan kembali tombol pilihan untuk pertanyaan berikutnya
+      }
+    } else {
+      showResult();
+    }
+  }
+
+  function showResult() {
+  const totalPoints = questions.length * 5;
+  const percentage = (score / totalPoints) * 100;
+  document.getElementById('score').textContent = `Skor Anda: (${percentage.toFixed(2)}%)`;
+  document.getElementById('quiz-container').style.display = 'none';
+  document.getElementById('result-container').style.display = 'block';
+  document.getElementById('backBtn').style.display = 'block';
+  score = 0;
+  currentQuestion = 0;
+}
+
+  function backToQuiz() {
+    document.getElementById('result-container').style.display = 'none';
+    document.getElementById('quiz-container').style.display = 'block';
+    startQuiz(); // Mulai ulang latihan
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pilih Kategori Cyber Game</title>
+  <style>
+    html, body {
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+      background-color: #121212;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+    }
+
+    h1 {
+      color: #00ffcc;
+    }
+
+    hr {
+      border: 1px solid #00ffcc;
+      width: 80%;
+      margin: 20px auto;
+    }
+
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .category-button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 15px 25px;
+      font-size: 18px;
+      cursor: pointer;
+      background-color: #212121;
+      color: #ffffff;
+      font-weight: bold;
+      border: none;
+      border-radius: 30px;
+      margin: 10px;
+      flex: 1;
+      max-width: 200px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .category-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #00ffcc;
+    }
+
+    .category-image {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 30%;
+      margin-bottom: 10px;
+    }
+    footer {
+      margin-top: auto;
+      width: auto;
+      background-color: #212121;
+      color: #ffffff;
+      padding: 10px;
+    }
+    a{
+      text-decoration: none;
+      color: red;
+    }
+    h1{
+      margin-bottom: 3%;
+    }
+    
+    @media (max-width: 600px) {
+      .category-button {
+        margin: 10px;
+      }
+      p{
+      margin-top: 5%;
+    }
+    }
+    
+  </style>
+</head>
+
+<body>
+  <p></p>
+  <a href="index.html"><h1>SELAMAT DATANG DI GAME POCADI!</h1></a>
+  <hr />
+
+  <div class="button-container">
+    <button class="category-button" onclick="redirect('https://html5.GameDistribution.com/28a7b27376604028bd65999810ef85e9/?timestamp=1709790845&countryCode=id&siteid=88&channelid=1&siteLocale=id&locale=id&gd_sdk_referrer_url=https%3A%2F%2Fwww.permainan.co.id%2Fpermainan%2F1-2-3-')">
+      <img class="category-image" src="game/asset/123.jpg" alt="Esports">
+      1 + 2 + 3 GAMES
+    </button>
+
+    <button class="category-button" onclick="redirect('https://gamedistribution.arkadiumarena.com/arenaapi/game/block-champ/html5?gd_sdk_referrer_url=https%3A%2F%2Fwww.permainan.co.id%2Fpermainan%2Fjuara-balok%23gameinfo&gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL3d3dy5wZXJtYWluYW4uY28uaWQvcGVybWFpbmFuL2p1YXJhLWJhbG9rI2dhbWVpbmZvIiwicGFyZW50RG9tYWluIjoicGVybWFpbmFuLmNvLmlkIiwidG9wRG9tYWluIjoicGVybWFpbmFuLmNvLmlkIiwiaGFzSW1wcmVzc2lvbiI6ZmFsc2UsImxvYWRlckVuYWJsZWQiOnRydWUsImhvc3QiOiJodG1sNS5nYW1lZGlzdHJpYnV0aW9uLmNvbSIsInZlcnNpb24iOiIxLjUuMTcifQ%3D%3D')">
+      <img class="category-image" src="game/asset/blockchamp.jpg" alt="Esports">
+      BLOCK CHAMP
+    </button>
+
+    <button class="category-button" onclick="redirect('https://words-of-wonders.game-files.crazygames.com/words-of-wonders/6/index.html')">
+      <img class="category-image" src="game/asset/wow.jpg" alt="Esports">
+      SAMBUNG KATA
+    </button>
+    <button class="category-button" onclick="redirect('https://html5.gamedistribution.com/3a573baae7b0497a841fb66e17419819/')">
+      <img class="category-image" src="game/asset/matematika.jpeg" alt="Esports">
+      MATEMATIKA ANAK
+    </button>
+    <button class="category-button" onclick="redirect('https://html5.gamedistribution.com/8e5e5f3b0e2b455fa4bcd53ddcf90fd0/')">
+      <img class="category-image" src="game/asset/tantanganmatematika.jpeg" alt="Esports">
+      TANTANGAN MATEMATIKA
+    </button>
+    <button class="category-button" onclick="redirect('https://html5.gamedistribution.com/892a8ce4633c4935991425b2d87c317d/')">
+      <img class="category-image" src="game/asset/aritmatika.jpg" alt="Esports">
+      ARITMATIKA GAME
+    </button>
+    <button class="category-button" onclick="redirect('https://html5.gamedistribution.com/90d8c36ba45c4c48aeab64ee00ac9122/')">
+      <img class="category-image" src="game/asset/jumbled.jpeg" alt="Esports">
+      JUMBLED.IO
+    </button>
+    <button class="category-button" onclick="redirect('https://cdn.pomu.com/g/burn-matches/index.html')">
+      <img class="category-image" src="game/asset/korekapi.webp" alt="Esports">
+      PUZZLE KOREK API
+    </button>
+    <button class="category-button" onclick="redirect('https://html5.gamedistribution.com/2447d5a69adc4846a7b6586c89af73c4/')">
+      <img class="category-image" src="game/asset/maze.jpeg" alt="Esports">
+      MAZE AND TOURIST
+    </button>
+    <button class="category-button" onclick="redirect('https://html5.gamedistribution.com/2b1c155215674a5690c9df37cfc73594/')">
+      <img class="category-image" src="game/asset/happy_village.jpeg" alt="Esports">
+      HAPPY VILLAGE
+    </button>
+    <button class="category-button" onclick="redirect('https://html5.gamedistribution.com/cec5796fa887415e90833d89fe6f96ac/')">
+      <img class="category-image" src="game/asset/NOMOR_CERDAS.jpg" alt="Esports">
+      NOMOR CERDAS
+    </button>
+    <button class="category-button" onclick="redirect('https://html5.gamedistribution.com/a0466ecd73894e74915dfa5f53329e91/')">
+      <img class="category-image" src="game/asset/sambungnomor.jpg" alt="Esports">
+      SAMBUNG NOMOR 2048
+    </button>
+    <button class="category-button" onclick="redirect('https://html5.gamedistribution.com/c2820a1635844cff8c6c9b2bf0771df0/')">
+      <img class="category-image" src="game/asset/edisi_imut.jpg" alt="Esports">
+      EDISI EMUT 2048
+    </button>
+    <button class="category-button" onclick="redirect('https://html5.gamedistribution.com/e286d56c388a4e6bb7e1927796776319/')">
+      <img class="category-image" src="game/asset/ECO.jpeg" alt="Esports">
+      ECO.INK SELAMATKAN BUMI
+    </button>
+    <button class="category-button" onclick="redirect('https://html5.gamedistribution.com/6a767f7fc0b24fefb80ac250bb2c7af3/')">
+      <img class="category-image" src="game/asset/RULO.jpeg" alt="Esports">
+      RULLO
+    </button>
+    <button class="category-button" onclick="redirect('https://html5.gamedistribution.com/de665abb5f074807ae939b249c328f21/')">
+      <img class="category-image" src="game/asset/world.jpeg" alt="Esports">
+      WORDS JUNGLE
+    </button>
+    <button class="category-button" onclick="redirect('https://html5.gamedistribution.com/89574c11d33b491e92e78cd25186a3b2/')">
+      <img class="category-image" src="game/asset/numbercruck.jpeg" alt="Esports">
+      NUMBER CRUNCH
+    </button>
+    <button class="category-button" onclick="redirect('https://html5.gamedistribution.com/80240ad837384eee871f5a2934f6085c/')">
+      <img class="category-image" src="game/asset/EX.jpeg" alt="Esports">
+      EG Hexar 2048
+    </button>
+    <button class="category-button" onclick="redirect('http://games.cdn.spilcloud.com/s/SnapTheShape_Hawaii_v2_final/index.html')">
+      <img class="category-image" src="game/asset/SHAPE.jpg" alt="Esports">
+      SNAP & SHAPE
+    </button>
+    <button class="category-button" onclick="redirect('https://html5.gamedistribution.com/6bf62276c601460dbfb149624c55e5db/')">
+      <img class="category-image" src="game/asset/KATA.jpeg" alt="Esports">
+      PENCARIAN KATA
+    </button>
+    <button class="category-button" onclick="redirect('https://html5.gamedistribution.com/122b912035dc4d35b09eb5c6e520d748/')">
+      <img class="category-image" src="game/asset/YES.jpg" alt="Esports">
+      YES OR NO CHALLENGE
+    </button>
+    <button class="category-button" onclick="redirect('https://html5.gamedistribution.com/bb76c08dfae64150b7a144e6c2ecc318/')">
+      <img class="category-image" src="game/asset/WORLD_TRIVIA.jpeg" alt="Esports">
+      WORLD TRIVIA
+    </button>
+    <button class="category-button" onclick="redirect('https://html5.gamedistribution.com/ce49c6469608496ab29dc382ba581f69/')">
+      <img class="category-image" src="game/asset/chess.jpeg" alt="Esports">
+      PERMAINAN CATUR
+    </button>
+    <button class="category-button" onclick="redirect('https://html5.gamedistribution.com/e231d5dfe0ff49e5bc20ca4a3b3d9f5e/')">
+      <img class="category-image" src="game/asset/TEKATEKI.jpeg" alt="Esports">
+      TEKA TEKI SILANG
+    </button>
+    <button class="category-button" onclick="redirect('https://html5.gamedistribution.com/00db99bb5c4846a4bfc1e3ef103b41be/')">
+      <img class="category-image" src="game/asset/GANTUNG.jpg" alt="Esports">
+      TEBAK KATA
+    </button>
+    <button class="category-button" onclick="redirect('https://html5.gamedistribution.com/55e456136b0643c09f5f6ab23cbe9572/')">
+      <img class="category-image" src="game/asset/PARKING.jpg" alt="Esports">
+      PARKING WAY
+    </button>
+    <button class="category-button" onclick="redirect('https://html5.gamedistribution.com/1e5a64d3133b4567b3db01098fed78de/')">
+      <img class="category-image" src="game/asset/TURN.jpg" alt="Esports">
+      Turn The Screw
+    </button>
+    <button class="category-button" onclick="redirect('https://html5.gamedistribution.com/63d0bbcb5773431c86ef495159925f7a/')">
+      <img class="category-image" src="game/asset/SHOTNMERGE.jpeg" alt="Esports">
+      SHOT N MERGE
+    </button>
+    <button class="category-button" onclick="redirect('https://html5.gamedistribution.com/929be6c901fa4ced9a0012f9d2a6e614/')">
+      <img class="category-image" src="game/asset/BRAINWASH.jpeg" alt="Esports">
+      BRAIN WASH
+    </button>
+    <button class="category-button" onclick="redirect('https://html5.gamedistribution.com/7a5735b0d1c743279c38e0b30e14fccd/')">
+      <img class="category-image" src="game/asset/TEBAKHEWAN.jpeg" alt="Esports">
+      TEBAK HEWAN
+    </button>
+    <button class="category-button" onclick="redirect('https://html5.gamedistribution.com/9f2122e725024a59a52e466eea56cf91/')">
+      <img class="category-image" src="game/asset/HAPPYGLASS.jpeg" alt="Esports">
+      HAPPY GLASS 2
+    </button>
+    <button class="category-button" onclick="redirect('https://html5.gamedistribution.com/886d9afd6dde42678c87c7d2c22851c3/')">
+      <img class="category-image" src="game/asset/MEWARNAI.jpg" alt="Esports">
+      MEWARNAI
+    </button>
+  </div>
+  <br>
+  <hr/>
+
+  <footer>
+    <p>&copy; 2024 <a href='TEAM.html'>KAMPUS MENGAJAR 7</a>. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const buttons = document.querySelectorAll('.category-button');
+
+    buttons.forEach(button => {
+      button.addEventListener('mouseenter', () => {
+        button.style.transform = 'scale(1.05)';
+        button.style.boxShadow = '0 0 20px #00ffcc';
+      });
+
+      button.addEventListener('mouseleave', () => {
+        button.style.transform = 'scale(1)';
+        button.style.boxShadow = 'none';
+      });
+    });
+
+    function redirect(url) {
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pilih Kategori Cerita</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS';
+      text-align: center;
+      background-color: #E6E6FA;
+      margin: 20px;
+    }
+    h1 {
+      color: #1F2544;
+    }
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    button:hover {
+      background-color: #017e5e;
+      color: aliceblue;
+    }
+    .category-button {
+      font-family: 'Comic Sans MS';
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 15px 25px;
+      font-size: 18px;
+      cursor: pointer;
+      background-color: #00cc99;
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      border: none;
+      border-radius: 30px;
+      margin: 10px;
+    }
+    .category-image {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 30%;
+      margin-bottom: 10px;
+    }
+    footer {
+      margin-top: 6%;
+      width: auto;
+      background-color: #212121;
+      color: #ffffff;
+      padding: 10px;
+    }
+    a{
+      text-decoration: none;
+      color: red;
+    }
+
+    @media (max-width: 600px) {
+      .button-container {
+        flex-direction: column;
+        align-items: center;            
+      }
+
+      button:hover {
+        color: aliceblue;
+      }
+
+      .category-button {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a href="namanamamengambang.html"><marquee><h1>TEMUKAN EBOOK MENARIK KAMU!</h1></marquee></a>
+  <hr size="5px" color="#474F7A"></hr>
+
+  <div class="button-container">
+    <button class="category-button" onclick="redirect('DONGENG')">
+      <img class="category-image" src="asset\dongeng.gif" alt="Dongeng">
+      BUKU<br>DONGENG
+    </button>
+    <button class="category-button" onclick="redirect('PELAJARAN')">
+      <img class="category-image" src="asset\matematika.gif" alt="PELAJARAN">
+      BUKU<br>PELAJARAN
+    </button>
+    <button class="category-button" onclick="redirect('BUKULAINNYA')">
+      <img class="category-image" src="asset\lainnya.gif" alt="BUKULAINNYA">
+      BUKU<br>LAINNYA
+    </button>
+    <button class="category-button" onclick="redirect('latihan')">
+      <img class="category-image" src="asset\student.gif" alt="aplikasi">
+      LATIHAN<br>SOAL
+    </button>
+    <button class="category-button" onclick="redirect('APLIKASI')">
+      <img class="category-image" src="asset\seni.gif" alt="aplikasi">
+      APLIKASI<br>EBOOK
+    </button>
+    <button class="category-button" onclick="redirect('game')">
+      <img class="category-image" src="asset\game.gif" alt="Tumbuhan">
+      GAME<br>EDUKASI
+    </button>
+    
+  </div><br>
+  <hr size="5px" color="#474F7A"></hr>
+  <footer>
+    <p>&copy; 2024 <a href='TEAM.html'>KAMPUS MENGAJAR 7</a>. All rights reserved.</p>
+  </footer>
+  <script>
+    function redirect(category) {
+      switch (category) {
+        case 'DONGENG':
+          window.location.href = 'DONGENG.html';
+          break;
+        case 'PELAJARAN':
+          window.location.href = 'PELAJARAN.html';
+          break;
+        case 'BUKULAINNYA':
+          window.location.href = 'https://drive.google.com/drive/folders/10ehVzBnEvGWvsIErejTwK5jP80AB8j3J';
+          break;
+          case 'latihan':
+          window.location.href = 'soal.html';
+          break;
+        case 'APLIKASI':
+          window.location.href = 'COOMINGSOON.html';
+          break;
+        case 'game':
+          window.location.href = 'game.html';
+          break;
+        default:
+          break;
+      }
+    }
+  </script>
+  </body>
+
+</html>

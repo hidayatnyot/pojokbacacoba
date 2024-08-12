@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Latihan Soal SD</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+  }
+
+  .container {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 36px;
+    color: #3C91E0;
+    margin-bottom: -5%;
+  }
+
+  button {
+    background-color: #FF9900;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+    outline: none;
+    font-weight:bold;
+  }
+
+  button:hover {
+    background-color: #FFBD33;
+  }
+
+  .question {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .options button {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    outline: none;color: rgb(0, 0, 0);
+  }
+
+  .options button:hover {
+    background-color: #91ff80;
+  }
+
+  .result {
+    text-align: center;
+    display: none;
+    margin-left: 20%;
+    margin-right: 20%;
+    
+  }
+
+  #result-container p {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+  }
+
+  #backBtn {
+    background-color: #4CAF50;
+    margin-top: 20px;
+  }
+
+  #backBtn:hover {
+    background-color: #45a049;
+  }
+  
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>BAHASA INDONESIA</h1><br>
+  <h5>20 NOMOR</h5>
+  <button id="startBtn" onclick="startQuiz()">Mulai Latihan</button>
+
+  <div id="quiz-container" style="display:none;">
+    <div class="question" id="question"></div>
+    <div class="options" id="options"></div>
+    <button id="nextBtn" onclick="nextQuestion()" style="display:none;">Lanjut</button>
+  </div>
+
+  <div class="result" id="result-container">
+    <h2>Hasil Latihan</h2>
+    <p id="score"></p>
+    <button id="backBtn" onclick="backToQuiz()">Kembali ke Soal</button>
+  </div>
+</div>
+
+<script>
+  const questions = [
+  {
+        question: "Manakah di antara kalimat-kalimat berikut yang memiliki subjek tunggal?",
+        options: ["A. Anak-anak bermain di taman.", "B. Buku-buku itu ada di rak.", "C. Burung-burung berkicau di pagi hari.", "D. Bunga-bunga mekar di kebun."],
+        answer: "B"
+    },
+    {
+        question: "Apa yang dimaksud dengan kata 'meja' dalam kalimat berikut: 'Budi menempatkan bukunya di meja'?",
+        options: ["A. Alat tulis", "B. Tempat tidur", "C. Tempat makan", "D. Tempat duduk"],
+        answer: "C"
+    },
+    {
+        question: "Kata 'berenang' dalam kalimat 'Ani senang berenang di kolam renang.' merupakan jenis kata kerja yang?",
+        options: ["A. Kata kerja transitif", "B. Kata kerja intransitif", "C. Kata kerja tidak transitif", "D. Kata kerja kausalitas"],
+        answer: "B"
+    },
+    {
+        question: "Apakah objek dalam kalimat berikut: 'Ani membeli buku di toko buku.'?",
+        options: ["A. Ani", "B. Membeli", "C. Buku", "D. Toko buku"],
+        answer: "C"
+    },
+    {
+        question: "Apa sinonim dari kata 'cepat'?",
+        options: ["A. Lambat", "B. Laju", "C. Perlahan", "D. Tidak tergesa-gesa"],
+        answer: "B"
+    },
+    {
+        question: "Apakah antonim dari kata 'besar'?",
+        options: ["A. Kecil", "B. Tinggi", "C. Lebar", "D. Panjang"],
+        answer: "A"
+    },
+    {
+        question: "Manakah di antara kata-kata berikut yang merupakan kata benda?",
+        options: ["A. Mengapa", "B. Lari", "C. Anjing", "D. Baik"],
+        answer: "C"
+    },
+    {
+        question: "Bagaimana fungsi tanda baca titik koma (;) dalam suatu kalimat?",
+        options: ["A. Memisahkan antarkalimat", "B. Menandai akhir kalimat", "C. Memisahkan antarkata dalam daftar", "D. Memberi penekanan pada kalimat"],
+        answer: "C"
+    },
+    {
+        question: "Apakah yang dimaksud dengan kata 'pintar' dalam kalimat berikut: 'Budi adalah anak yang pintar.'?",
+        options: ["A. Budi pandai", "B. Budi pemalu", "C. Budi sombong", "D. Budi cuek"],
+        answer: "A"
+    },
+    {
+        question: "Apakah yang dimaksud dengan 'paragraf' dalam sebuah teks?",
+        options: ["A. Gagasan utama", "B. Rangkaian kalimat", "C. Bagian dari alinea", "D. Rangkaian paragraf"],
+        answer: "D"
+    },
+    {
+        question: "Apakah tujuan dari paragraf pembuka dalam sebuah teks?",
+        options: ["A. Memberikan informasi detail", "B. Menyajikan gagasan utama", "C. Memperkenalkan topik", "D. Menyimpulkan isi teks"],
+        answer: "C"
+    },
+    {
+        question: "Apakah yang dimaksud dengan 'penggalan cerita' dalam sebuah teks naratif?",
+        options: ["A. Bagian utama cerita", "B. Rangkaian peristiwa", "C. Potongan dialog", "D. Kumpulan kalimat"],
+        answer: "B"
+    },
+    {
+        question: "Manakah di antara kalimat-kalimat berikut yang merupakan kalimat langsung?",
+        options: ["A. Dia berkata bahwa dia senang belajar.", "B. 'Saya ingin pergi ke pantai,' kata Ani.", "C. Ani bertanya apakah Budi sudah makan.", "D. Dia bilang bahwa dia suka membaca."],
+        answer: "B"
+    },
+    {
+        question: "Apakah yang dimaksud dengan kata 'bersepeda' dalam kalimat berikut: 'Ani suka bersepeda di sore hari.'?",
+        options: ["A. Naik sepeda", "B. Memperbaiki sepeda", "C. Menjual sepeda", "D. Membuat sepeda"],
+        answer: "A"
+    },
+    {
+        question: "Apakah yang dimaksud dengan 'lukisan' dalam sebuah cerita pendek?",
+        options: ["A. Gambar-gambar yang menghiasi cerita", "B. Alat tulis untuk menulis cerita", "C. Bagian paling menarik dari cerita", "D. Gambaran visual tentang tokoh atau latar"],
+        answer: "D"
+    },
+    {
+        question: "Manakah di antara kalimat-kalimat berikut yang memiliki kata ganti yang tidak tepat?",
+        options: ["A. Ani membantu ibu membuat kue. Kemudian, Ani memberi kue itu kepada tetangga.", "B. Budi membaca buku di perpustakaan. Dia menemukan buku yang sangat menarik.", "C. Saya sangat senang hari ini. Dia datang ke rumah saya untuk bermain.", "D. Dia mengundang saya ke pesta ulang tahunnya. Kami bersenang-senang di sana."],
+        answer: "C"
+    },
+    {
+        question: "Apakah yang dimaksud dengan kata 'kereta api' dalam kalimat berikut: 'Saya naik kereta api untuk pergi ke kota.'?",
+        options: ["A. Transportasi darat", "B. Alat transportasi", "C. Sarana transportasi", "D. Kendaraan umum"],
+        answer: "B"
+    },
+    {
+        question: "Apakah yang dimaksud dengan 'tokoh utama' dalam sebuah cerita?",
+        options: ["A. Tokoh pendukung", "B. Tokoh yang muncul sekali", "C. Tokoh yang paling penting", "D. Tokoh yang tidak terlalu penting"],
+        answer: "C"
+    },
+    {
+        question: "Bagaimana cara menuliskan tanggal yang benar dalam sebuah surat?",
+        options: ["A. Hari, Bulan, Tahun (Contoh: 25 Maret 2024)", "B. Tahun, Bulan, Hari (Contoh: 2024 Maret 25)", "C. Bulan, Tahun, Hari (Contoh: Maret 2024 25)", "D. Hari, Tahun, Bulan (Contoh: 25 2024 Maret)"],
+        answer: "A"
+    },
+    {
+        question: "Apakah yang dimaksud dengan 'alur cerita' dalam sebuah narasi?",
+        options: ["A. Bagian tengah cerita", "B. Urutan peristiwa dalam cerita", "C. Cara penuturannya", "D. Bagian akhir cerita"],
+        answer: "B"
+    },
+    {
+        question: "Manakah di antara kalimat-kalimat berikut yang merupakan kalimat pasif?",
+        options: ["A. Budi membantu ibunya membersihkan rumah.", "B. Ibu memasak nasi di dapur.", "C. Ani sedang membaca buku di taman.", "D. Kue itu dimakan oleh Budi dan Ani."],
+        answer: "D"
+    },
+    {
+        question: "Apakah yang dimaksud dengan 'kata sifat' dalam sebuah kalimat?",
+        options: ["A. Kata yang menyatakan tindakan", "B. Kata yang menyatakan tempat", "C. Kata yang menyatakan keadaan atau ciri", "D. Kata yang menyatakan hubungan"],
+        answer: "C"
+    }
+    // Tambahkan soal lainnya di sini
+  ];
+
+  let currentQuestion = 0;
+  let score = 0;
+
+  function startQuiz() {
+    document.getElementById('startBtn').style.display = 'none'; // Menghilangkan tombol "Mulai Latihan"
+    document.getElementById('quiz-container').style.display = 'block';
+    document.getElementById('result-container').style.display = 'none';
+    shuffleQuestions(); // Mengacak urutan soal sebelum dimulai
+    showQuestion();
+  }
+
+  function shuffleQuestions() {
+    for (let i = questions.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [questions[i], questions[j]] = [questions[j], questions[i]];
+    }
+  }
+
+  function showQuestion() {
+    const currentQues = questions[currentQuestion];
+    document.getElementById('question').textContent = currentQues.question;
+    document.getElementById('options').innerHTML = "";
+    for (let i = 0; i < currentQues.options.length; i++) {
+      const option = document.createElement("button");
+      option.textContent = currentQues.options[i];
+      option.addEventListener("click", function() {
+        checkAnswer(currentQues, i);
+      });
+      document.getElementById('options').appendChild(option);
+    }
+  }
+
+  function checkAnswer(question, selectedOption) {
+    if (question.answer === String.fromCharCode(65 + selectedOption)) {
+      score += 5; // Skor ditambah 5 jika jawaban benar
+    }
+    document.getElementById('nextBtn').style.display = 'block'; // Menampilkan tombol Next setelah menjawab
+    for (const option of document.getElementById('options').querySelectorAll('button')) {
+      option.disabled = true; // Menonaktifkan tombol pilihan setelah menjawab
+    }
+  }
+
+  function nextQuestion() {
+    currentQuestion++;
+    if (currentQuestion < questions.length) {
+      showQuestion();
+      document.getElementById('nextBtn').style.display = 'none'; // Menyembunyikan tombol Next untuk pertanyaan berikutnya
+      for (const option of document.getElementById('options').querySelectorAll('button')) {
+        option.disabled = false; // Mengaktifkan kembali tombol pilihan untuk pertanyaan berikutnya
+      }
+    } else {
+      showResult();
+    }
+  }
+
+  function showResult() {
+  document.getElementById('quiz-container').style.display = 'none';
+  document.getElementById('result-container').style.display = 'block';
+  document.getElementById('score').textContent = `Skor Anda: ${score} dari 100`;
+  document.getElementById('backBtn').style.display = 'block';
+  // Reset values
+  score = 0;
+  currentQuestion = 0;
+}
+
+  function backToQuiz() {
+    document.getElementById('result-container').style.display = 'none';
+    document.getElementById('quiz-container').style.display = 'block';
+    startQuiz(); // Mulai ulang latihan
+  }
+</script>
+
+</body>
+</html>

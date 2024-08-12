@@ -1,0 +1,100 @@
+var questionsPJOKKelas5 = [
+    {
+        question: "Apakah manfaat melakukan olahraga secara teratur?",
+        options: ["A. Meningkatkan kebugaran tubuh", "B. Menambah berat badan", "C. Mengurangi stamina", "D. Meningkatkan risiko penyakit"],
+        answer: "A"
+    },
+    {
+        question: "Apa yang dimaksud dengan gerakan peregangan (stretching) dalam olahraga?",
+        options: ["A. Gerakan cepat untuk memanaskan tubuh", "B. Gerakan untuk menguatkan otot", "C. Gerakan untuk memperpanjang otot", "D. Gerakan untuk mengendurkan otot"],
+        answer: "C"
+    },
+    {
+        question: "Manakah olahraga yang melatih kekuatan otot?",
+        options: ["A. Jogging", "B. Renang", "C. Angkat beban", "D. Bersepeda"],
+        answer: "C"
+    },
+    {
+        question: "Apa yang menjadi manfaat dari olahraga renang?",
+        options: ["A. Meningkatkan kekuatan otot", "B. Meningkatkan fleksibilitas tubuh", "C. Meningkatkan daya tahan jantung", "D. Semua jawaban benar"],
+        answer: "D"
+    },
+    {
+        question: "Bagaimana cara melakukan pemanasan sebelum berolahraga?",
+        options: ["A. Melakukan gerakan peregangan", "B. Langsung melakukan olahraga berat", "C. Minum air dingin", "D. Duduk diam"],
+        answer: "A"
+    },
+    {
+        question: "Apa yang dimaksud dengan pola makan sehat?",
+        options: ["A. Mengonsumsi makanan cepat saji setiap hari", "B. Mengonsumsi makanan bergizi seimbang", "C. Tidak makan sama sekali", "D. Mengonsumsi makanan tinggi gula"],
+        answer: "B"
+    },
+    {
+        question: "Apakah manfaat tidur yang cukup bagi kesehatan?",
+        options: ["A. Meningkatkan risiko penyakit", "B. Meningkatkan konsentrasi", "C. Menurunkan berat badan", "D. Meningkatkan stres"],
+        answer: "B"
+    },
+    {
+        question: "Berapa lama waktu tidur yang direkomendasikan untuk anak usia sekolah?",
+        options: ["A. 4-6 jam", "B. 6-8 jam", "C. 8-10 jam", "D. 10-12 jam"],
+        answer: "C"
+    },
+    {
+        question: "Apa yang menjadi manfaat dari menjaga kebersihan tubuh?",
+        options: ["A. Mencegah penyebaran penyakit", "B. Menjadi kotor", "C. Meningkatkan risiko penyakit", "D. Meningkatkan kebugaran"],
+        answer: "A"
+    },
+    {
+        question: "Bagaimana cara menjaga kebersihan gigi dan mulut?",
+        options: ["A. Menggosok gigi setelah makan dan sebelum tidur", "B. Tidak menggosok gigi", "C. Minum minuman manis sebelum tidur", "D. Tidak perlu menjaga kebersihan gigi"],
+        answer: "A"
+    },
+    {
+        question: "Apakah manfaat melakukan olahraga bersama teman-teman?",
+        options: ["A. Meningkatkan kebugaran tubuh", "B. Membuat tubuh lebih lelah", "C. Mengurangi kebugaran tubuh", "D. Meningkatkan kecemasan"],
+        answer: "A"
+    },
+    {
+        question: "Bagaimana cara memastikan kita terhidrasi dengan baik saat berolahraga?",
+        options: ["A. Minum air setelah berolahraga", "B. Tidak minum air sama sekali", "C. Minum air sebelum dan sesudah berolahraga", "D. Minum air hanya saat merasa haus"],
+        answer: "C"
+    },
+    {
+        question: "Apakah manfaat melakukan peregangan (stretching) setelah berolahraga?",
+        options: ["A. Mengurangi risiko cedera otot", "B. Membuat otot lebih kaku", "C. Tidak ada manfaat", "D. Meningkatkan risiko cedera"],
+        answer: "A"
+    },
+    {
+        question: "Apa yang harus dilakukan jika kita cedera saat berolahraga?",
+        options: ["A. Melanjutkan olahraga tanpa perhatian pada cedera", "B. Mengistirahatkan area yang cedera dan mencari pertolongan jika diperlukan", "C. Tetap berolahraga dengan intensitas yang sama", "D. Mengabaikan cedera dan tetap berolahraga"],
+        answer: "B"
+    },
+    {
+        question: "Berapa jumlah langkah yang direkomendasikan untuk dilakukan setiap hari agar tetap sehat?",
+        options: ["A. 5000 langkah", "B. 10000 langkah", "C. 15000 langkah", "D. 20000 langkah"],
+        answer: "B"
+    },
+    {
+        question: "Apakah manfaat melakukan olahraga ringan seperti jalan kaki?",
+        options: ["A. Meningkatkan kebugaran jantung dan paru-paru", "B. Menurunkan kesehatan jantung", "C. Meningkatkan risiko penyakit jantung", "D. Tidak ada manfaat"],
+        answer: "A"
+    },
+    {
+        question: "Bagaimana cara mencegah cedera saat berolahraga?",
+        options: ["A. Menggunakan peralatan yang tidak sesuai", "B. Melakukan pemanasan yang singkat", "C. Mengabaikan petunjuk keselamatan", "D. Memperhatikan teknik dan peralatan yang digunakan"],
+        answer: "D"
+    },
+    {
+        question: "Apakah manfaat mengonsumsi makanan sehat sebelum berolahraga?",
+        options: ["A. Meningkatkan energi dan kinerja", "B. Membantu meringankan perut", "C. Mengurangi energi dan kinerja", "D. Meningkatkan berat badan"],
+        answer: "A"
+    },
+    {
+        question: "Apa yang harus dilakukan setelah berolahraga untuk pemulihan yang lebih baik?",
+        options: ["A. Tidak perlu melakukan apa pun", "B. Minum minuman berenergi", "C. Makan makanan berlemak tinggi", "D. Mengonsumsi makanan bergizi dan istirahat yang cukup"],
+        answer: "D"
+    }
+];
+```
+
+Sekarang Anda memiliki 20 soal Pendidikan Jasmani, Olahraga, dan Kesehatan yang setiap jawabannya valid. Jika Anda membutuhkan bantuan lebih lanjut atau memiliki permintaan lain, jangan ragu untuk bertanya!

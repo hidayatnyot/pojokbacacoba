@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Responsive Profile Page</title>
+
+    <style>
+        body {
+            font-family: 'Comic Sans MS';
+            background-color: #cbfcff;
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+        }
+
+        .profile-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px;
+        }
+
+        .profile-card {
+            text-align: center;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 70px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            flex: 0 1 calc(25% - 40px);
+        }
+
+        .profile-card:hover {
+            transform: scale(1.05);
+        }
+
+        .profile-circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 10% auto 10px; /* Atur margin-top dan margin-bottom */
+        }
+
+        .profile-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profile-info {
+            padding: 10px;
+        }
+
+        .tentang {
+            text-align: center;
+            margin-top: 80px;
+            margin-bottom: 50px;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+
+        /* Media Queries */
+        @media only screen and (max-width: 768px) {
+            .profile-card {
+                flex: 0 1 calc(50% - 40px);
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .profile-card {
+                flex: 0 1 calc(100% - 40px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tentang">
+        <a href="index.html">
+            <h1 style="color:rgb(130, 46, 255)">KM 7 PROFILE TEAM</h1>
+        </a>
+    </div>
+
+    <div class="profile-container">
+        <a href="https://instagram.com/dhy_id"><div class="profile-card" onmouseover="hoverProfile(this)" onmouseout="unhoverProfile(this)">
+            <div class="profile-circle">
+                <img src="team/dayat.jpg" alt="DAYAT">
+            </div>
+            <div class="profile-info">
+                <p>PATRIO HIDAYAT</p>
+                <hr>
+                <p>UNIVERSITAS COKROAMINOTO PALOPO</p>
+            </div></a>
+        </div>
+
+        <div class="profile-card" onmouseover="hoverProfile(this)" onmouseout="unhoverProfile(this)">
+            <a href="https://instagram.com/oktaviadiah_lestari"><div class="profile-circle">
+                <img src="team/via.jpg" alt="VIA">
+            </div>
+            <div class="profile-info">
+                <p>OKTAVIA DIAH LESTARI</p>
+                <hr>
+                <p>UNIVERSITAS COKROAMINOTO PALOPO</p>
+            </div></a>
+        </div>
+
+        <div class="profile-card" onmouseover="hoverProfile(this)" onmouseout="unhoverProfile(this)">
+            <a href="https://instagram.com/nurul.rahmawati__"><div class="profile-circle">
+                <img src="team/nurul.jpg" alt="NUNU">
+            </div>
+            <div class="profile-info">
+                <p>NURUL RAHMAWATI</p>
+                <hr>
+                <p>UNIVERSITAS NEGERI MAKASSAR</p>
+            </div></a>
+        </div>
+
+        <div class="profile-card" onmouseover="hoverProfile(this)" onmouseout="unhoverProfile(this)">
+            <a href="https://instagram.com/_dmitta"><div class="profile-circle">
+                <img src="team/dea.jpg" alt="DEA">
+            </div>
+            <div class="profile-info">
+                <p>DEA MITA</p>
+                <hr>
+                <p>UNIVERSITAS COKROAMINOTO PALOPO</p>
+            </div></a>
+        </div>
+    </div>
+
+    <script>
+        function hoverProfile(element) {
+            element.style.boxShadow = "0 0 20px rgba(0, 0, 0, 0.2)";
+        }
+
+        function unhoverProfile(element) {
+            element.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.1)";
+        }
+    </script>
+
+</body>
+</html>

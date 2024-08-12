@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Latihan Soal SD</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(circle, #FF0000, #0000FF);
+    
+  }
+
+  .container {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 36px;
+    color: #3C91E0;
+    margin-bottom: -5%;
+  }
+
+  button {
+    background-color: #FF9900;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+    outline: none;
+    font-weight:bold;
+  }
+
+  button:hover {
+    background-color: #FFBD33;
+  }
+
+  .question {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .options button {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    outline: none;color: rgb(0, 0, 0);
+  }
+
+  .options button:hover {
+    background-color: #91ff80;
+  }
+
+  .result {
+    text-align: center;
+    display: none;
+    margin-left: 20%;
+    margin-right: 20%;
+    
+  }
+
+  #result-container p {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+  }
+
+  #backBtn {
+    background-color: #4CAF50;
+    margin-top: 20px;
+  }
+
+  #backBtn:hover {
+    background-color: #45a049;
+  }
+  
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>AGAMA KRISTEN</h1><br>
+  <h5>20 NOMOR</h5>
+  <button id="startBtn" onclick="startQuiz()">Mulai Latihan</button>
+
+  <div id="quiz-container" style="display:none;">
+    <div class="question" id="question"></div>
+    <div class="options" id="options"></div>
+    <button id="nextBtn" onclick="nextQuestion()" style="display:none;">Lanjut</button>
+  </div>
+
+  <div class="result" id="result-container">
+    <h2>Hasil Latihan</h2>
+    <p id="score"></p>
+    <a href="../soal.html"><button>Kembali ke Soal</button></a>
+  </div>
+</div>
+
+<script>
+  const questions = [
+  {
+        question: "Siapakah tokoh utama dalam agama Kristen?",
+        options: ["A. Nabi Muhammad", "B. Yesus Kristus", "C. Siddharta Gautama", "D. Nabi Musa"],
+        answer: "B"
+    },
+    {
+        question: "Apa nama kitab suci umat Kristen?",
+        options: ["A. Al-Quran", "B. Veda", "C. Talmud", "D. Alkitab"],
+        answer: "D"
+    },
+    {
+        question: "Dimanakah Yesus lahir?",
+        options: ["A. Nazaret", "B. Betlehem", "C. Yerusalem", "D. Roma"],
+        answer: "B"
+    },
+    {
+        question: "Siapakah ibu dari Yesus?",
+        options: ["A. Maria", "B. Elisabet", "C. Rahel", "D. Sarah"],
+        answer: "A"
+    },
+    {
+        question: "Apa yang Yesus lakukan dalam mukjizat pertamanya?",
+        options: ["A. Membuat roti dan ikan banyak", "B. Membebaskan Israel dari perbudakan", "C. Memenangkan pertempuran melawan musuh", "D. Mengubah air menjadi anggur"],
+        answer: "D"
+    },
+    {
+        question: "Siapakah rasul utama dalam agama Kristen?",
+        options: ["A. Musa", "B. Ibrahim", "C. Paulus", "D. Muhammad"],
+        answer: "C"
+    },
+    {
+        question: "Apa yang terjadi pada hari Paskah?",
+        options: ["A. Kelahiran Yesus", "B. Penyaliban dan kebangkitan Yesus", "C. Kenaikan Yesus ke surga", "D. Kehancuran Bait Suci"],
+        answer: "B"
+    },
+    {
+        question: "Siapakah yang menemukan Yesus bangkit dari kubur?",
+        options: ["A. Maria Magdalena", "B. Petrus", "C. Yohanes", "D. Tomas"],
+        answer: "A"
+    },
+    {
+        question: "Apa yang dilakukan Yesus saat terakhir kali makan bersama murid-murid-Nya?",
+        options: ["A. Membagikan roti dan ikan", "B. Mengadakan pesta besar", "C. Memberkati roti dan anggur", "D. Memperingatkan murid-murid akan bahaya di depan"],
+        answer: "C"
+    },
+    {
+        question: "Apakah nama orang yang mengkhianati Yesus?",
+        options: ["A. Yudas", "B. Petrus", "C. Yohanes", "D. Andreas"],
+        answer: "A"
+    },
+    {
+        question: "Siapakah sahabat Yesus yang meninggal kemudian dibangkitkan kembali oleh Yesus?",
+        options: ["A. Lazarus", "B. Bartimeus", "C. Zakheus", "D. Yohanes"],
+        answer: "A"
+    },
+    {
+        question: "Apa yang dilakukan Yesus saat mendengar Lazarus telah meninggal?",
+        options: ["A. Bertepuk tangan", "B. Menangis", "C. Berteriak", "D. Membaca doa"],
+        answer: "B"
+    },
+    {
+        question: "Siapakah raja yang mencoba mencari Yesus untuk membunuh-Nya ketika masih bayi?",
+        options: ["A. Raja Herodes", "B. Raja Daud", "C. Raja Salomo", "D. Raja Saul"],
+        answer: "A"
+    },
+    {
+        question: "Apa yang dilakukan Yesus saat makan bersama 5000 orang dengan hanya lima roti dan dua ikan?",
+        options: ["A. Membuat lebih banyak roti dan ikan", "B. Membagikan roti dan ikan kepada setiap orang", "C. Menjadi saksi mukjizat", "D. Memberkati roti dan ikan"],
+        answer: "B"
+    },
+    {
+        question: "Siapakah perempuan yang menyembuhkan dengan menyentuh jubah Yesus?",
+        options: ["A. Perempuan Siro-Fenisia", "B. Perempuan Samaria", "C. Perempuan Kanaan", "D. Perempuan Hemoragia"],
+        answer: "D"
+    },
+    {
+        question: "Apa yang dilakukan Yesus di atas air?",
+        options: ["A. Berjalan", "B. Berenang", "C. Berlari", "D. Berdiri"],
+        answer: "A"
+    },
+    {
+        question: "Siapakah yang menjadi murid yang menyangkal Yesus tiga kali sebelumnya Yesus disalibkan?",
+        options: ["A. Petrus", "B. Yohanes", "C. Yakobus", "D. Yudas"],
+        answer: "A"
+    },
+    {
+        question: "Apa yang dilakukan Yesus di dalam Bait Suci yang membuat orang-orang marah?",
+        options: ["A. Membaca kitab suci", "B. Memberkati orang-orang", "C. Mengusir pedagang-pedagang", "D. Mengajar para murid"],
+        answer: "C"
+    },
+    {
+        question: "Siapakah yang mengkhianati Yesus dengan mencium-Nya?",
+        options: ["A. Yudas", "B. Petrus", "C. Yakobus", "D. Tomas"],
+        answer: "A"
+    },
+    {
+        question: "Apa yang dikatakan Yesus saat disalibkan?",
+        options: ["A. 'Allahu Akbar'", "B. 'Inilah hari kemenangan kita'", "C. 'Aku haus'", "D. 'Bapa, ampunilah mereka, sebab mereka tidak tahu apa yang mereka perbuat'"],
+        answer: "D"
+    },
+    {
+        question: "Siapakah yang menyambut Yesus dengan daun-daun palem ketika memasuki Yerusalem?",
+        options: ["A. Orang-orang Kristen", "B. Para rasul", "C. Orang banyak", "D. Anak-anak kecil"],
+        answer: "C"
+    }
+];
+
+  let currentQuestion = 0;
+  let score = 0;
+
+  function startQuiz() {
+    document.getElementById('startBtn').style.display = 'none'; // Menghilangkan tombol "Mulai Latihan"
+    document.getElementById('quiz-container').style.display = 'block';
+    document.getElementById('result-container').style.display = 'none';
+    shuffleQuestions(); // Mengacak urutan soal sebelum dimulai
+    showQuestion();
+  }
+
+  function shuffleQuestions() {
+    for (let i = questions.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [questions[i], questions[j]] = [questions[j], questions[i]];
+    }
+  }
+
+  function showQuestion() {
+    const currentQues = questions[currentQuestion];
+    document.getElementById('question').textContent = currentQues.question;
+    document.getElementById('options').innerHTML = "";
+    for (let i = 0; i < currentQues.options.length; i++) {
+      const option = document.createElement("button");
+      option.textContent = currentQues.options[i];
+      option.addEventListener("click", function() {
+        checkAnswer(currentQues, i);
+      });
+      document.getElementById('options').appendChild(option);
+    }
+  }
+
+  function checkAnswer(question, selectedOption) {
+    if (question.answer === String.fromCharCode(65 + selectedOption)) {
+      score += 5; // Skor ditambah 5 jika jawaban benar
+    }
+    document.getElementById('nextBtn').style.display = 'block'; // Menampilkan tombol Next setelah menjawab
+    for (const option of document.getElementById('options').querySelectorAll('button')) {
+      option.disabled = true; // Menonaktifkan tombol pilihan setelah menjawab
+    }
+  }
+
+  function nextQuestion() {
+    currentQuestion++;
+    if (currentQuestion < questions.length) {
+      showQuestion();
+      document.getElementById('nextBtn').style.display = 'none'; // Menyembunyikan tombol Next untuk pertanyaan berikutnya
+      for (const option of document.getElementById('options').querySelectorAll('button')) {
+        option.disabled = false; // Mengaktifkan kembali tombol pilihan untuk pertanyaan berikutnya
+      }
+    } else {
+      showResult();
+    }
+  }
+
+  function showResult() {
+  const totalPoints = questions.length * 5;
+  const percentage = (score / totalPoints) * 100;
+  document.getElementById('score').textContent = `Skor Anda: (${percentage.toFixed(2)}%)`;
+  document.getElementById('quiz-container').style.display = 'none';
+  document.getElementById('result-container').style.display = 'block';
+  document.getElementById('backBtn').style.display = 'block';
+  score = 0;
+  currentQuestion = 0;
+}
+
+  function backToQuiz() {
+    document.getElementById('result-container').style.display = 'none';
+    document.getElementById('quiz-container').style.display = 'block';
+    startQuiz(); // Mulai ulang latihan
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+var questionsIPAKelas5 = [
+    {
+        question: "Proses apa yang dilakukan oleh tumbuhan untuk membuat makanannya sendiri?",
+        options: ["A. Pernafasan", "B. Fotosintesis", "C. Transpirasi", "D. Pencernaan"],
+        answer: "B"
+    },
+    {
+        question: "Manakah di antara berikut yang BUKAN merupakan jenis mesin sederhana?",
+        options: ["A. Tuas", "B. Roda dan poros", "C. Katrol", "D. Baterai"],
+        answer: "D"
+    },
+    {
+        question: "Apa zat alami yang paling keras di Bumi?",
+        options: ["A. Emas", "B. Besi", "C. Intan", "D. Perak"],
+        answer: "C"
+    },
+    {
+        question: "Planet manakah yang dikenal sebagai 'Planet Merah'?",
+        options: ["A. Venus", "B. Mars", "C. Jupiter", "D. Saturnus"],
+        answer: "B"
+    },
+    {
+        question: "Manakah di antara berikut yang merupakan hewan berdarah dingin?",
+        options: ["A. Anjing", "B. Kucing", "C. Ular", "D. Kelinci"],
+        answer: "C"
+    },
+    {
+        question: "Bagian tanaman yang mana yang menyerap air dan nutrisi dari tanah?",
+        options: ["A. Daun", "B. Akar", "C. Batang", "D. Bunga"],
+        answer: "B"
+    },
+    {
+        question: "Apa simbol kimia untuk air?",
+        options: ["A. H2O", "B. CO2", "C. NaCl", "D. O2"],
+        answer: "A"
+    },
+    {
+        question: "Manakah di antara berikut yang BUKAN merupakan sumber energi terbarukan?",
+        options: ["A. Energi Matahari", "B. Energi Angin", "C. Batu bara", "D. Energi Hidro"],
+        answer: "C"
+    },
+    {
+        question: "Berapa titik didih air dalam derajat Celsius?",
+        options: ["A. 100°C", "B. 0°C", "C. -273°C", "D. 50°C"],
+        answer: "A"
+    },
+    {
+        question: "Manakah di antara berikut yang BUKAN merupakan fase zat?",
+        options: ["A. Padat", "B. Cair", "C. Gas", "D. Plasma"],
+        answer: "D"
+    },
+    {
+        question: "Apa yang menyebabkan langit terlihat biru pada siang hari?",
+        options: ["A. Refleksi cahaya Bulan", "B. Cahaya Matahari terpantul", "C. Cahaya Matahari dihamburkan oleh partikel udara", "D. Refleksi cahaya bintang"],
+        answer: "C"
+    },
+    {
+        question: "Apa yang menyebabkan gunung berapi meletus?",
+        options: ["A. Tekanan air", "B. Gerakan lempeng bumi", "C. Udara panas", "D. Gas rumah kaca"],
+        answer: "B"
+    },
+    {
+        question: "Berapa jumlah planet dalam Tata Surya?",
+        options: ["A. 7", "B. 8", "C. 9", "D. 10"],
+        answer: "B"
+    },
+    {
+        question: "Manakah yang merupakan benda langit yang memancarkan cahaya?",
+        options: ["A. Planet", "B. Bintang", "C. Bulan", "D. Asteroid"],
+        answer: "B"
+    },
+    {
+        question: "Apa yang mengukur kekuatan gempa bumi?",
+        options: ["A. Termometer", "B. Barometer", "C. Seismograf", "D. Anemometer"],
+        answer: "C"
+    },
+    {
+        question: "Bagaimana udara panas dan dingin bergerak di atmosfer?",
+        options: ["A. Udara panas naik dan udara dingin turun", "B. Udara dingin naik dan udara panas turun", "C. Udara panas dan dingin bergerak berdampingan", "D. Udara panas dan dingin tidak bergerak"],
+        answer: "A"
+    },
+    {
+        question: "Apa yang menyebabkan pelangi terbentuk?",
+        options: ["A. Hujan", "B. Matahari", "C. Awan", "D. Semua jawaban benar"],
+        answer: "D"
+    },
+    {
+        question: "Apa yang disebut ketika air berubah menjadi uap air?",
+        options: ["A. Mencair", "B. Menguap", "C. Membeku", "D. Mengeras"],
+        answer: "B"
+    },
+    {
+        question: "Bagaimana cahaya matahari digunakan oleh tumbuhan?",
+        options: ["A. Untuk menghasilkan oksigen", "B. Untuk membuat makanan melalui fotosintesis", "C. Untuk menghangatkan diri", "D. Untuk menghasilkan air"],
+        answer: "B"
+    },
+    {
+        question: "Apa yang menyebabkan air terjun turun ke bawah?",
+        options: ["A. Gravitasi", "B. Suhu tinggi", "C. Tekanan udara", "D. Angin"],
+        answer: "A"
+    }
+];

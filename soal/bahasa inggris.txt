@@ -1,0 +1,69 @@
+var questionsEnglishKelas5 = [
+    {
+        question: "What is the opposite of 'big'?",
+        options: ["A. Small", "B. Tall", "C. Long", "D. Wide"],
+        answer: "A"
+    },
+    {
+        question: "Which word means 'not fast'?",
+        options: ["A. Slow", "B. Quick", "C. Rapid", "D. Swift"],
+        answer: "A"
+    },
+    {
+        question: "What is the plural form of 'child'?",
+        options: ["A. Childs", "B. Children", "C. Childes", "D. Childs'"],
+        answer: "B"
+    },
+    {
+        question: "Which sentence is correct? ",
+        options: ["A. He don't like ice cream.", "B. She have a pet dog.", "C. I plays football every day.", "D. They are playing in the park."],
+        answer: "D"
+    },
+    {
+        question: "Which word is a synonym of 'happy'?",
+        options: ["A. Sad", "B. Angry", "C. Joyful", "D. Upset"],
+        answer: "C"
+    },
+    {
+        question: "What is the past tense of 'go'?",
+        options: ["A. Went", "B. Gone", "C. Going", "D. Goed"],
+        answer: "A"
+    },
+    {
+        question: "Which word means 'a place where you can borrow books'?",
+        options: ["A. School", "B. Park", "C. Library", "D. Zoo"],
+        answer: "C"
+    },
+    {
+        question: "What is the opposite of 'dark'?",
+        options: ["A. Black", "B. Night", "C. Light", "D. Shadow"],
+        answer: "C"
+    },
+    {
+        question: "Which sentence is correct?",
+        options: ["A. She are going to the market.", "B. I is playing with my friends.", "C. They am studying for the test.", "D. He is eating lunch."],
+        answer: "D"
+    },
+    {
+        question: "What is the plural form of 'mouse'?",
+        options: ["A. Mouses", "B. Mice", "C. Mous", "D. Mouse's"],
+        answer: "B"
+    }
+];
+
+
+var questionsEnglishKelas5 = [
+    {
+        question: "What is the opposite of 'big'?",
+        options: ["A. Small", "B. Tall", "C. Long", "D. Wide"],
+        answer: "A",
+        image: "https://example.com/big_opposite.jpg"
+    },
+    {
+        question: "Which word means 'not fast'?",
+        options: ["A. Slow", "B. Quick", "C. Rapid", "D. Swift"],
+        answer: "A",
+        image: "https://example.com/not_fast.jpg"
+    },
+    // Tambahkan objek pertanyaan berikutnya dengan properti gambar yang sesuai
+];

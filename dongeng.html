@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pojok Baca Digital Anak</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS';
+            text-align: center;
+            background-color: #e1f5fe;
+            margin: 0;
+            padding: 0; 
+        }
+
+        #header {
+            background-color: #ff4081; 
+            color: white;
+            padding: 15px;
+        }
+        #header a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #content {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .book {
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid #f06292;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #333;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .book:hover {
+            transform: scale(1.1);
+            color: rgb(26, 26, 26);
+            background-color: #E3E1D9;
+        }
+
+        .book img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .book h3 {
+            margin: 10px 0;
+            font-size: 20px;
+        }
+
+        .book p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .hr{
+            border: 0;
+            height: 30px;
+            border-style: solid;
+            border-color: #333;
+            border-width: 10x 0 0 0;
+            border-radius: 20px;
+        }
+        .hr::before {
+            display: block;
+            content: "";
+            height: 30px;
+            border-style: solid;
+            border-color: #333;
+            border-width: 0 0 1px 0;
+            border-radius: 20px;
+        }
+        footer {
+      margin-top: auto;
+      width: auto;
+      background-color: #f06292;
+      padding: 10px;
+      color: #e1f5fe;
+    }
+
+        @media (max-width: 600px) {
+            .book {
+                width: calc(100% - 40px);
+            }
+            .book:hover {
+                color: rgb(26, 26, 26);
+                background-color: #E3E1D9;
+            }
+        }
+
+        .hr{
+            border: 0;
+            height: 30px;
+            border-style: solid;
+            border-color: #333;
+            border-width: 10x 0 0 0;
+            border-radius: 20px;
+        }
+        .hr::before {
+            display: block;
+            content: "";
+            height: 30px;
+            border-style: solid;
+            border-color: #333;
+            border-width: 0 0 1px 0;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <a href="index.html"><h2 style="text-decoration: none;">POJOK BACA DIGITAL ANAK</h2><hr><h2 style="color: rgb(0, 242, 255);">DONGENG</h2><hr></a>
+    </div>
+
+    <div id="content">
+        <a class="book" href="buku\dongeng\5 dongeng anak dunia.html">
+            <img src="asset/5dongenganakdunia.png" alt="Buku Cerita 1">
+            <h3>5 dongeng anak dunia</h3>
+            <p>Buku yang menarik untuk dibaca. Klik untuk Membaca!</p>
+        </a>
+            <a class="book" href="buku\dongeng\akuanakberani.html">
+                <img src="asset/akuanakberani.png" alt="Buku Cerita 1">
+                <h3>Aku anak berani dan pantang menyerah</h3>
+                <p>Buku yang menarik untuk dibaca. Klik untuk Membaca!</p>
+            </a>
+        </a>
+        <a class="book" href="buku\dongeng\akusayangibu.html">
+            <img src="asset/akus ayang ibu.png" alt="Buku Cerita 1">
+            <h3>aku sayang ibu</h3>
+            <p>Buku yang menarik untuk dibaca. Klik untuk Membaca!</p>
+        </a>
+        <a class="book" href="buku\dongeng\dongenganak.html">
+            <img src="asset/dogenganak.png" alt="Buku Cerita 1">
+            <h3>Kumpulan Dongeng anak</h3>
+            <p>Buku yang menarik untuk dibaca. Klik untuk Membaca!</p>
+        </a>
+        <a class="book" href="buku\dongeng\duaputridanraja.html">
+            <img src="asset/raja dan putri.png" alt="Buku Cerita 1">
+            <h3>Kisah Dua Putri dan si Raja Ular</h3>
+            <p>Buku yang menarik untuk dibaca. Klik untuk Membaca!</p>
+        </a>
+        <a class="book" href="buku\dongeng\kancil.html">
+            <img src="asset/kancil.png" alt="Buku Cerita 1">
+            <h3>KANCIL</h3>
+            <p>Buku yang menarik untuk dibaca. Klik untuk Membaca!</p>
+        </a>
+        <a class="book" href="buku\dongeng\kapalsikakek.html">
+            <img src="asset/kapalkakek.png" alt="Buku Cerita 1">
+            <h3>Kapal kakek bori si beruang bijak</h3>
+            <p>Buku yang menarik untuk dibaca. Klik untuk Membaca!</p>
+        </a>
+        <a class="book" href="buku\dongeng\kumpulancerita anak2.html">
+            <img src="asset/balasbudiburung.png" alt="Buku Cerita 1">
+            <h3>KANCIL</h3>
+            <p>Buku yang menarik untuk dibaca. Klik untuk Membaca!</p>
+        </a>
+        <a class="book" href="buku\dongeng\ketika lilo piknik.html">
+            <img src="asset/ketikalilo.png" alt="Buku Cerita 1">
+            <h3>Ketika Lilo Piknik</h3>
+            <p>Buku yang menarik untuk dibaca. Klik untuk Membaca!</p>
+        </a>
+        <a class="book" href="buku\dongeng\kumpulanceritaanak.html">
+            <img src="asset/20kumpulanceritaanak.png" alt="Buku Cerita 1">
+            <h3>KANCIL</h3>
+            <p>Buku yang menarik untuk dibaca. Klik untuk Membaca!</p>
+        </a>
+        <a class="book" href="buku\dongeng\kumpulandongeng.html">
+            <img src="asset/kumpulandongengdanceritaanak.png" alt="Buku Cerita 1">
+            <h3>Kumpulan Dongeng dan cerita anak</h3>
+            <p>Buku yang menarik untuk dibaca. Klik untuk Membaca!</p>
+        </a>
+        <a class="book" href="buku\dongeng\malinkundang.html">
+            <img src="asset/lainkundang.png" alt="Buku Cerita 1">
+            <h3>Malin Kundang</h3>
+            <p>Buku yang menarik untuk dibaca. Klik untuk Membaca!</p>
+        </a>
+        <a class="book" href="buku\dongeng\pajakkita.html">
+            <img src="asset/pajakkita.png" alt="Buku Cerita 1">
+            <h3>Pajak Kita</h3>
+            <p>Buku yang menarik untuk dibaca. Klik untuk Membaca!</p>
+        </a>
+        <a class="book" href="buku\dongeng\virusseramon.html">
+            <img src="asset/virusseramon.png" alt="Buku Cerita 1">
+            <h3>Virus Seramon</h3>
+            <p>Buku yang menarik untuk dibaca. Klik untuk Membaca!</p>
+        </a>
+        
+    </div>
+    </div>
+
+</body>
+<footer>
+    <p>&copy; 2024 KAMPUS MENGAJAR 7. All rights reserved.</p>
+  </footer>
+</html>

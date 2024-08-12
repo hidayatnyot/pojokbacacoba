@@ -1,0 +1,102 @@
+var questionsAgamaBaliKelas5 = [
+    {
+        question: "Siapakah Dewa Utama dalam kepercayaan Hindu Bali?",
+        options: ["A. Brahma", "B. Wisnu", "C. Siwa", "D. Iswara"],
+        answer: "C"
+    },
+    {
+        question: "Apa nama tempat ibadah utama umat Hindu Bali?",
+        options: ["A. Pura", "B. Gereja", "C. Vihara", "D. Mesjid"],
+        answer: "A"
+    },
+    {
+        question: "Apakah nama perayaan tahunan yang ditandai dengan prosesi ogoh-ogoh dan penjor di Bali?",
+        options: ["A. Nyepi", "B. Galungan", "C. Kuningan", "D. Pagerwesi"],
+        answer: "B"
+    },
+    {
+        question: "Apa yang dilakukan umat Hindu Bali selama perayaan Nyepi?",
+        options: ["A. Pawai prosesi ogoh-ogoh", "B. Berpuasa dari makanan dan minuman", "C. Melakukan ritual pembersihan rumah", "D. Merayakan dengan pesta dan musik"],
+        answer: "B"
+    },
+    {
+        question: "Apa nama upacara di Bali yang dilakukan untuk mengantarkan roh orang yang meninggal ke alam baka?",
+        options: ["A. Ngaben", "B. Metatah", "C. Odalan", "D. Manusa Yadnya"],
+        answer: "A"
+    },
+    {
+        question: "Siapakah yang sering dianggap sebagai ibu segala dewa dalam agama Hindu Bali?",
+        options: ["A. Durga", "B. Saraswati", "C. Laksmi", "D. Parwati"],
+        answer: "C"
+    },
+    {
+        question: "Apa yang dilakukan umat Hindu Bali selama perayaan Kuningan?",
+        options: ["A. Memberikan sesajen kepada roh leluhur", "B. Membuat penjor di depan rumah", "C. Mengunjungi tempat ibadah untuk bersembahyang", "D. Melakukan upacara pembersihan rumah"],
+        answer: "A"
+    },
+    {
+        question: "Apa yang melambangkan tarian pendet dalam kepercayaan Hindu Bali?",
+        options: ["A. Kesucian", "B. Kebahagiaan", "C. Kebhinekaan", "D. Kehidupan baru"],
+        answer: "A"
+    },
+    {
+        question: "Apa yang dilakukan umat Hindu Bali selama perayaan Pagerwesi?",
+        options: ["A. Melakukan sembahyang bersama di pura", "B. Membuat penjor di depan rumah", "C. Memberikan sesaji kepada dewa", "D. Memuja dewa Siwa"],
+        answer: "A"
+    },
+    {
+        question: "Apa nama upacara yang dilakukan untuk merayakan hari jadi sebuah pura di Bali?",
+        options: ["A. Odalan", "B. Ngaben", "C. Metatah", "D. Nyepi"],
+        answer: "A"
+    },
+    {
+        question: "Siapakah Dewa yang dianggap sebagai dewa pencipta dalam agama Hindu Bali?",
+        options: ["A. Wisnu", "B. Brahma", "C. Siwa", "D. Iswara"],
+        answer: "B"
+    },
+    {
+        question: "Apa yang dilakukan umat Hindu Bali selama perayaan Galungan?",
+        options: ["A. Membuat penjor di depan rumah", "B. Melakukan sembahyang bersama di pura", "C. Memberikan sesajen kepada leluhur", "D. Berpuasa dari makanan dan minuman"],
+        answer: "C"
+    },
+    {
+        question: "Apa yang dilakukan umat Hindu Bali selama perayaan Saraswati?",
+        options: ["A. Melakukan ritual pembersihan rumah", "B. Bersembahyang di sungai", "C. Mengadakan pawai budaya", "D. Mengunjungi tempat suci di gunung"],
+        answer: "B"
+    },
+    {
+        question: "Apakah nama tempat suci utama di Bali yang sering dikunjungi oleh umat Hindu?",
+        options: ["A. Gunung Bromo", "B. Pura Besakih", "C. Danau Toba", "D. Taman Mini Indonesia Indah"],
+        answer: "B"
+    },
+    {
+        question: "Siapakah yang menjadi tokoh sentral dalam wayang kulit Bali?",
+        options: ["A. Arjuna", "B. Hanoman", "C. Krishna", "D. Rama"],
+        answer: "D"
+    },
+    {
+        question: "Apa yang melambangkan tarian baris dalam upacara Hindu Bali?",
+        options: ["A. Kesucian", "B. Kebahagiaan", "C. Kebhinekaan", "D. Kedisiplinan"],
+        answer: "D"
+    },
+    {
+        question: "Siapakah dewa yang dianggap sebagai dewa pemelihara dalam agama Hindu Bali?",
+        options: ["A. Brahma", "B. Wisnu", "C. Siwa", "D. Iswara"],
+        answer: "B"
+    },
+    {
+        question: "Apa yang dilakukan umat Hindu Bali selama perayaan Tumpek Landep?",
+        options: ["A. Melakukan ritual pembersihan rumah", "B. Memberikan sesajen kepada alam", "C. Memuja alam semesta", "D. Memberkati peralatan pertanian"],
+        answer: "D"
+    },
+    {
+        question: "Apa yang dilakukan umat Hindu Bali selama perayaan Tumpek Uduh?",
+        options: ["A. Melakukan sembahyang bersama di pura", "B. Melakukan ritual pembersihan rumah", "C. Memberikan sesajen kepada pohon", "D. Melakukan meditasi di alam terbuka"],
+        answer: "C"
+    },
+    {
+        question: "Siapakah Dewa yang dianggap sebagai dewa pemusnah dalam agama Hindu Bali?",
+        options: ["A. Wisnu", "B. Brahma", "C. Siwa", "D. Iswara"],
+        answer: "C"
+    }
+];

@@ -1,0 +1,110 @@
+var questionsAgamaKristenKelas5 = [
+    {
+        question: "Siapakah tokoh utama dalam agama Kristen?",
+        options: ["A. Nabi Muhammad", "B. Yesus Kristus", "C. Siddharta Gautama", "D. Nabi Musa"],
+        answer: "B"
+    },
+    {
+        question: "Apa nama kitab suci umat Kristen?",
+        options: ["A. Al-Quran", "B. Veda", "C. Talmud", "D. Alkitab"],
+        answer: "D"
+    },
+    {
+        question: "Dimanakah Yesus lahir?",
+        options: ["A. Nazaret", "B. Betlehem", "C. Yerusalem", "D. Roma"],
+        answer: "B"
+    },
+    {
+        question: "Siapakah ibu dari Yesus?",
+        options: ["A. Maria", "B. Elisabet", "C. Rahel", "D. Sarah"],
+        answer: "A"
+    },
+    {
+        question: "Apa yang Yesus lakukan dalam mukjizat pertamanya?",
+        options: ["A. Membuat roti dan ikan banyak", "B. Membebaskan Israel dari perbudakan", "C. Memenangkan pertempuran melawan musuh", "D. Mengubah air menjadi anggur"],
+        answer: "D"
+    },
+    {
+        question: "Siapakah rasul utama dalam agama Kristen?",
+        options: ["A. Musa", "B. Ibrahim", "C. Paulus", "D. Muhammad"],
+        answer: "C"
+    },
+    {
+        question: "Apa yang terjadi pada hari Paskah?",
+        options: ["A. Kelahiran Yesus", "B. Penyaliban dan kebangkitan Yesus", "C. Kenaikan Yesus ke surga", "D. Kehancuran Bait Suci"],
+        answer: "B"
+    },
+    {
+        question: "Siapakah yang menemukan Yesus bangkit dari kubur?",
+        options: ["A. Maria Magdalena", "B. Petrus", "C. Yohanes", "D. Tomas"],
+        answer: "A"
+    },
+    {
+        question: "Apa yang dilakukan Yesus saat terakhir kali makan bersama murid-murid-Nya?",
+        options: ["A. Membagikan roti dan ikan", "B. Mengadakan pesta besar", "C. Memberkati roti dan anggur", "D. Memperingatkan murid-murid akan bahaya di depan"],
+        answer: "C"
+    },
+    {
+        question: "Apakah nama orang yang mengkhianati Yesus?",
+        options: ["A. Yudas", "B. Petrus", "C. Yohanes", "D. Andreas"],
+        answer: "A"
+    },
+    {
+        question: "Siapakah sahabat Yesus yang meninggal kemudian dibangkitkan kembali oleh Yesus?",
+        options: ["A. Lazarus", "B. Bartimeus", "C. Zakheus", "D. Yohanes"],
+        answer: "A"
+    },
+    {
+        question: "Apa yang dilakukan Yesus saat mendengar Lazarus telah meninggal?",
+        options: ["A. Bertepuk tangan", "B. Menangis", "C. Berteriak", "D. Membaca doa"],
+        answer: "B"
+    },
+    {
+        question: "Siapakah raja yang mencoba mencari Yesus untuk membunuh-Nya ketika masih bayi?",
+        options: ["A. Raja Herodes", "B. Raja Daud", "C. Raja Salomo", "D. Raja Saul"],
+        answer: "A"
+    },
+    {
+        question: "Apa yang dilakukan Yesus saat makan bersama 5000 orang dengan hanya lima roti dan dua ikan?",
+        options: ["A. Membuat lebih banyak roti dan ikan", "B. Membagikan roti dan ikan kepada setiap orang", "C. Menjadi saksi mukjizat", "D. Memberkati roti dan ikan"],
+        answer: "B"
+    },
+    {
+        question: "Siapakah perempuan yang menyembuhkan dengan menyentuh jubah Yesus?",
+        options: ["A. Perempuan Siro-Fenisia", "B. Perempuan Samaria", "C. Perempuan Kanaan", "D. Perempuan Hemoragia"],
+        answer: "D"
+    },
+    {
+        question: "Apa yang dilakukan Yesus di atas air?",
+        options: ["A. Berjalan", "B. Berenang", "C. Berlari", "D. Berdiri"],
+        answer: "A"
+    },
+    {
+        question: "Siapakah yang menjadi murid yang menyangkal Yesus tiga kali sebelumnya Yesus disalibkan?",
+        options: ["A. Petrus", "B. Yohanes", "C. Yakobus", "D. Yudas"],
+        answer: "A"
+    },
+    {
+        question: "Apa yang dilakukan Yesus di dalam Bait Suci yang membuat orang-orang marah?",
+        options: ["A. Membaca kitab suci", "B. Memberkati orang-orang", "C. Mengusir pedagang-pedagang", "D. Mengajar para murid"],
+        answer: "C"
+    },
+    {
+        question: "Siapakah yang mengkhianati Yesus dengan mencium-Nya?",
+        options: ["A. Yudas", "B. Petrus", "C. Yakobus", "D. Tomas"],
+        answer: "A"
+    },
+    {
+        question: "Apa yang dikatakan Yesus saat disalibkan?",
+        options: ["A. 'Allahu Akbar'", "B. 'Inilah hari kemenangan kita'", "C. 'Aku haus'", "D. 'Bapa, ampunilah mereka, sebab mereka tidak tahu apa yang mereka perbuat'"],
+        answer: "D"
+    },
+    {
+        question: "Siapakah yang menyambut Yesus dengan daun-daun palem ketika memasuki Yerusalem?",
+        options: ["A. Orang-orang Kristen", "B. Para rasul", "C. Orang banyak", "D. Anak-anak kecil"],
+        answer: "C"
+    }
+];
+```
+
+Dengan menggunakan variabel `questionsAgamaKristenKelas5`, Anda dapat mengintegrasikan soal-soal Agama Kristen ke dalam aplikasi atau permainan yang sedang Anda buat. Jika Anda memerlukan bantuan lebih lanjut atau memiliki pertanyaan lain, jangan ragu untuk bertanya!

@@ -1,0 +1,107 @@
+var questionsAgamaIslamKelas5 = [
+    {
+        question: "Siapakah Nabi terakhir dalam agama Islam?",
+        options: ["A. Nabi Adam", "B. Nabi Musa", "C. Nabi Isa", "D. Nabi Muhammad"],
+        answer: "D"
+    },
+    {
+        question: "Berapakah jumlah rukun Islam?",
+        options: ["A. 3", "B. 4", "C. 5", "D. 6"],
+        answer: "C"
+    },
+    {
+        question: "Apakah ibadah pertama dalam Islam?",
+        options: ["A. Shalat", "B. Puasa", "C. Zakat", "D. Shahadah"],
+        answer: "D"
+    },
+    {
+        question: "Apa yang dilakukan umat Islam pada bulan Ramadhan?",
+        options: ["A. Menyantap sahur", "B. Melakukan ibadah haji", "C. Merayakan Idul Fitri", "D. Berpuasa dari fajar hingga maghrib"],
+        answer: "D"
+    },
+    {
+        question: "Apakah nama ibu Nabi Muhammad SAW?",
+        options: ["A. Aminah binti Wahab", "B. Khadijah binti Khuwaylid", "C. Fatimah binti Asad", "D. Aisyah binti Abu Bakar"],
+        answer: "A"
+    },
+    {
+        question: "Manakah di antara berikut yang merupakan salah satu nama surah dalam Al-Quran?",
+        options: ["A. Al-Hadith", "B. Al-Bukhari", "C. Al-Fatihah", "D. Al-Muttaqin"],
+        answer: "C"
+    },
+    {
+        question: "Apakah nama istri Nabi Ibrahim AS yang juga ibu dari Nabi Isma'il AS?",
+        options: ["A. Hajar", "B. Sarah", "C. Asiyah", "D. Maryam"],
+        answer: "A"
+    },
+    {
+        question: "Apa yang dilakukan umat Islam pada hari raya Idul Adha?",
+        options: ["A. Shalat Id", "B. Berpuasa", "C. Berkumpul dengan keluarga", "D. Membagikan zakat"],
+        answer: "A"
+    },
+    {
+        question: "Siapakah sahabat Nabi yang terkenal dengan julukan 'Lion of Allah'?",
+        options: ["A. Umar bin Khattab", "B. Abu Bakar Ash-Shiddiq", "C. Ali bin Abi Thalib", "D. Uthman bin Affan"],
+        answer: "C"
+    },
+    {
+        question: "Apakah yang dimaksud dengan syahadat?",
+        options: ["A. Menjalankan ibadah haji", "B. Menyantap sahur", "C. Mengucapkan dua kalimat kesaksian", "D. Menjalankan ibadah puasa"],
+        answer: "C"
+    },
+    {
+        question: "Manakah yang merupakan nama istri Nabi Muhammad SAW yang pertama?",
+        options: ["A. Aminah binti Wahab", "B. Khadijah binti Khuwaylid", "C. Hafsah binti Umar", "D. Zainab binti Jahsy"],
+        answer: "B"
+    },
+    {
+        question: "Apa yang dilakukan umat Islam pada hari raya Idul Fitri?",
+        options: ["A. Berpuasa", "B. Menyantap sahur", "C. Membagikan zakat fitrah", "D. Melakukan ibadah haji"],
+        answer: "C"
+    },
+    {
+        question: "Manakah yang merupakan nama anak Nabi Ibrahim AS?",
+        options: ["A. Isma'il", "B. Ishak", "C. Ya'qub", "D. Yusuf"],
+        answer: "A"
+    },
+    {
+        question: "Apa yang dimaksud dengan puasa sunnah?",
+        options: ["A. Puasa yang wajib", "B. Puasa yang dianjurkan tetapi tidak wajib", "C. Puasa yang dilakukan hanya pada hari Jumat", "D. Puasa yang dilakukan pada bulan Rajab"],
+        answer: "B"
+    },
+    {
+        question: "Siapakah yang merupakan imam pertama umat Islam?",
+        options: ["A. Nabi Muhammad SAW", "B. Abu Bakar Ash-Shiddiq", "C. Umar bin Khattab", "D. Ali bin Abi Thalib"],
+        answer: "B"
+    },
+    {
+        question: "Apakah yang dimaksud dengan zakat fitrah?",
+        options: ["A. Zakat yang dikeluarkan saat seseorang berpuasa", "B. Zakat yang dikeluarkan saat seseorang berhaji", "C. Zakat yang dikeluarkan untuk orang yang berpuasa", "D. Zakat yang dikeluarkan pada akhir tahun hijriyah"],
+        answer: "A"
+    },
+    {
+        question: "Manakah yang merupakan nama anak Nabi Yakub AS?",
+        options: ["A. Yusuf", "B. Isma'il", "C. Ishak", "D. Musa"],
+        answer: "A"
+    },
+    {
+        question: "Apa yang dilakukan umat Islam pada hari raya Idul Adha?",
+        options: ["A. Membagikan zakat", "B. Berkumpul dengan keluarga", "C. Melakukan ibadah haji", "D. Membaca Al-Quran"],
+        answer: "C"
+    },
+    {
+        question: "Siapakah yang menemukan sumur Zamzam di Mekah?",
+        options: ["A. Nabi Isma'il AS", "B. Nabi Ibrahim AS", "C. Hajar", "D. Nabi Muhammad SAW"],
+        answer: "A"
+    },
+    {
+        question: "Apa yang dilakukan umat Islam pada hari raya Idul Fitri?",
+        options: ["A. Melakukan ibadah haji", "B. Merayakan kelahiran Nabi Muhammad SAW", "C. Menyantap sahur", "D. Membaca Al-Quran"],
+        answer: "B"
+    },
+    {
+        question: "Manakah yang merupakan nama anak Nabi Muhammad SAW?",
+        options: ["A. Al-Qasim", "B. Abdullah", "C. Ali", "D. Umar"],
+        answer: "A"
+    }
+];

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Preview</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #pdf-container {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #pdf-viewer {
+            width: 100%;
+            height: 100%;
+        }
+
+        #popout-link {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #4285f4;
+            color: #ffffff;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            hidePopoutLink();
+        });
+    </script>
+</head>
+<body>
+    <div id="pdf-container">
+        <iframe id="pdf-viewer" src="https://drive.google.com/viewerng/viewer?embedded=true&rm=minimal&url=https://drive.google.com/uc?id=1aLouZ7O9S2zRGYCnXq2WVQpBnnpPfn5y" style="border: none;"></iframe>
+    </div>
+</body>
+</html>
